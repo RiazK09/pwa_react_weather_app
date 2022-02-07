@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+# React Progressive Weather Web App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> A Weather Application created using React.js and the Open Weather API.
 
-## Available Scripts
+![Search](/public/images/Desktop.png)
 
-In the project directory, you can run:
+The deployed app can be found [here](https://heuristic-blackwell-1dc524.netlify.app)
 
-### `npm start`
+## Table of Contents:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [General Info](#general-information)
+- [Installation](#installation)
+- [Usage Instructions](#usage-instructions)
+- [Handling of API Keys](#handling-of-api-keys)
+- [Screenshots](#screenshots)
+- [Credits](#credits)
+- [Contact](#contact)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## General Information
 
-### `npm test`
+Fundamentally, this is a Progressive Web App (PWA) built using React.js. It is a weather application which can be installed on any device, by anyone.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation
 
-### `npm run build`
+To install this application on your mobile device, please carry out the following instructions:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Navigate to the following [website.](https://heuristic-blackwell-1dc524.netlify.app)
+2. Thereafter, click on the 3 dots which are positioned in the top right hand corner of your screen.
+3. Scroll down to the "Install App" option and click on it.
+4. Lastly, you will be prompted to 'install' the app. Once this has been selected, the weather application will then be installed on your mobile device.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Usage Instructions
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Simply enter a town or city into the input field and hit "Enter". The weather forecast for that respective area will then be displayed.
 
-### `npm run eject`
+The user interface is extremely simple, intuitive and easy to use.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Handling of API Keys
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+An API key was utilised & it was secured in the following manner:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- I created a '.env' file within the root folder.
+- Thereafter, I added the key to this file. E.g. REACT_APP_API_KEY=enterYourKey.
+  This key is now accessible by using the process.env variable. E.g. console.log(process.env.REACT_APP_API_KEY) will print the Open Weather API key to the console.
+- Lastly, I added the .env file to my .gitignore file. This ensures that the .env file, which contains the key, is NOT pushed to GitHub!
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Screenshots
 
-## Learn More
+- **Mobile View**
+  <br />
+  ![Favourites](/public/images/Mobile.jpeg)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Credits
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Build and Deploy a React PWA [tutorial](https://www.youtube.com/watch?v=IaJqMcOMuDM&list=LL&index=1) - by JavaScript Mastery.
 
-### Code Splitting
+## Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+👤 **Riaz Karolia**
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Feel free to contact me on [LinkedIn](https://www.linkedin.com/in/riaz-karolia/)
